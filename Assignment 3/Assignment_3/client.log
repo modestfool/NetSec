@@ -1,0 +1,8 @@
+00:01:22 [DEBUG:client.c:39] have sent "48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+" to remote server
+00:01:22 [DEBUG:client.c:44] Encryption from [48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+] to [q]
+
+00:01:22 [DEBUG:client.c:77] Decryption from [q] to [48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+]
+

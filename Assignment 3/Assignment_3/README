@@ -1,0 +1,45 @@
+CSE508: Network Security, Spring 2016
+
+Homework 3: Plugboard Proxy Program
+Basava R Kanaparthi (110479710)
+——————————————————————————————————————————————————————————————————
+README 
+
+Source files included: 
+	pbproxy.c 	  - main source file. 
+
+	client.c	  - Client program which runs 2 threads, one for reading from stdin and writing to socket, other to read from socket and write to stdout.
+	
+	server.c	  - Server program which runs 2 threads, one for reading from client socket and writing to listening port, other to read from listening 				port and write to client socket.
+	server.h	  - Prototype of the server instance to write to ssh,client and read from client,sshd respectively, after appropriately encrypting or 						decrypting.
+	
+	client.h      - Prototype the client instance, decrytps and writes to the server.
+	
+	pbproxy 	  - executable generated.
+
+	Makefile	  - makefile to generate the executable.
+	
+	mykey.txt	  - Random Hexadecimal String used for encryption and decryption in the AES CTR method.
+
+		
+Usage:
+
+	make
+
+Test using nc:
+
+	On the server:
+		Terminal 1 : nc -l -p 2222
+		Terminal 2 : ./pbproxy -k mykey.txt -l 1234 localhost 2222
+	On the client:
+		Terminal 1 : ./pbproxy -k mykey.txt localhost 1234
+
+Test using ssh:
+
+	On the server:
+		Terminal 1 : ./pbproxy -k mykey.txt -l 1234 localhost 22
+	On the client:
+		Terminal 1 : ssh -o "ProxyCommand ./pbproxy -k mykey.txt localhost 1234" localhost
+
+
+

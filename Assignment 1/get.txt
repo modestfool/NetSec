@@ -1,0 +1,302 @@
+22:30:48.908526 IP 92.240.68.152.9485 > 192.168.0.200.80: Flags [P.], seq 1:112, ack 1, win 12, options [nop,nop,TS val 300433150 ecr 10415270], length 111: HTTP: GET http://pic.leech.it/i/f166c/479246b0asttas.jpg HTTP/1.1
+..>.....GET http://pic.leech.it/i/f166c/479246b0asttas.jpg HTTP/1.1
+22:30:49.032953 IP 192.168.0.200.40341 > 87.98.246.8.80: Flags [P.], seq 1:164, ack 1, win 913, options [nop,nop,TS val 10415320 ecr 1744811464], length 163: HTTP: GET /i/f166c/479246b0asttas.jpg HTTP/1.0
+....g...GET /i/f166c/479246b0asttas.jpg HTTP/1.0
+22:31:19.154432 IP 92.240.68.152.17260 > 192.168.0.200.80: Flags [P.], seq 1:142, ack 1, win 12, options [nop,nop,TS val 300440711 ecr 10422835], length 141: HTTP: GET http://ecx.images-amazon.com/images/I/41oZ1XsiOAL._SL500_AA300_.jpg HTTP/1.1
+3GET http://ecx.images-amazon.com/images/I/41oZ1XsiOAL._SL500_AA300_.jpg HTTP/1.1
+22:31:19.244125 IP 192.168.0.200.40630 > 216.137.63.121.80: Flags [P.], seq 1:168, ack 1, win 913, options [nop,nop,TS val 10422873 ecr 42960426], length 167: HTTP: GET /images/I/41oZ1XsiOAL. HTTP/1.0
+Y...*GET /images/I/41oZ1XsiOAL. HTTP/1.0
+22:31:50.161538 IP 92.240.68.152.19957 > 192.168.0.200.80: Flags [P.], seq 1:113, ack 1, win 12, options [nop,nop,TS val 300448463 ecr 10430587], length 112: HTTP: GET http://images4.byinter.net/DSC442566.gif HTTP/1.1
+..z...({GET http://images4.byinter.net/DSC442566.gif HTTP/1.1
+22:31:50.359908 IP 192.168.0.200.55528 > 159.148.96.184.80: Flags [P.], seq 1:158, ack 1, win 913, options [nop,nop,TS val 10430651 ecr 1009802272], length 157: HTTP: GET /DSC442566.gif HTTP/1.0
+..(.<0\ GET /DSC442566.gif HTTP/1.0
+22:32:21.149589 IP 92.240.68.152.22272 > 192.168.0.200.80: Flags [P.], seq 1:130, ack 1, win 12, options [nop,nop,TS val 300456210 ecr 10438334], length 129: HTTP: GET http://www.nature.com/news/2009/090527/images/459492a-i1.0.jpg HTTP/1.1
+......F.GET http://www.nature.com/news/2009/090527/images/459492a-i1.0.jpg HTTP/1.1
+02:54:46.028958 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [P.], seq 1:192, ack 1, win 913, options [nop,nop,TS val 14374569 ecr 1886596604], length 191: HTTP: GET /ubuntu/dists/oneiric-security/InRelease HTTP/1.1
+..V.ps-.GET /ubuntu/dists/oneiric-security/InRelease HTTP/1.1
+02:54:46.032578 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 1:181, ack 1, win 913, options [nop,nop,TS val 14374570 ecr 326745584], length 180: HTTP: GET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+02:54:46.056291 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [P.], seq 192:435, ack 563, win 983, options [nop,nop,TS val 14374575 ecr 1886596610], length 243: HTTP: GET /ubuntu/dists/oneiric-security/Release.gpg HTTP/1.1
+..V.ps..GET /ubuntu/dists/oneiric-security/Release.gpg HTTP/1.1
+02:54:46.062554 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 181:413, ack 528, win 980, options [nop,nop,TS val 14374577 ecr 326745587], length 232: HTTP: GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+02:54:46.082239 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [P.], seq 435:674, ack 841, win 1053, options [nop,nop,TS val 14374582 ecr 1886596617], length 239: HTTP: GET /ubuntu/dists/oneiric-security/Release HTTP/1.1
+..V.ps.	GET /ubuntu/dists/oneiric-security/Release HTTP/1.1
+02:54:46.094457 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 413:641, ack 891, win 1047, options [nop,nop,TS val 14374585 ecr 326745590], length 228: HTTP: GET /ubuntu/dists/oneiric/Release HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/Release HTTP/1.1
+02:54:46.102039 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [P.], seq 1:571, ack 1, win 913, options [nop,nop,TS val 14374587 ecr 3838325605], length 570: HTTP: GET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+..V...3eGET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/InRelease HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/InRelease HTTP/1.1
+02:54:46.142106 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [P.], seq 674:929, ack 1121, win 1124, options [nop,nop,TS val 14374597 ecr 1886596624], length 255: HTTP: GET /ubuntu/dists/oneiric-security/main/source/Sources.bz2 HTTP/1.1
+..V.ps..GET /ubuntu/dists/oneiric-security/main/source/Sources.bz2 HTTP/1.1
+02:54:46.146533 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 641:885, ack 1079, win 1114, options [nop,nop,TS val 14374598 ecr 326745593], length 244: HTTP: GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+02:54:46.170058 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [.], seq 929:2377, ack 1401, win 1194, options [nop,nop,TS val 14374604 ecr 1886596639], length 1448: HTTP: GET /ubuntu/dists/oneiric-security/restricted/source/Sources.bz2 HTTP/1.1
+..V.ps..GET /ubuntu/dists/oneiric-security/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/restricted/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/main/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-security/restricted/i18n/Index HTTP/1.1
+02:54:46.176724 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 885:1321, ack 1267, win 1181, options [nop,nop,TS val 14374606 ecr 326745598], length 436: HTTP: GET /ubuntu/dists/oneiric/main/binary-i386/Packages.bz2 HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/main/i18n/Index HTTP/1.1
+02:54:46.207856 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [P.], seq 571:1051, ack 1682, win 1123, options [nop,nop,TS val 14374613 ecr 3838325630], length 480: HTTP: GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+..V...3~GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/Release.gpg HTTP/1.1
+02:54:46.209010 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 1321:1523, ack 1988, win 1315, options [nop,nop,TS val 14374614 ecr 326745601], length 202: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.bz2 HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.bz2 HTTP/1.1
+02:54:46.209744 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [P.], seq 3523:4097, ack 3895, win 1896, options [nop,nop,TS val 14374614 ecr 1886596646], length 574: HTTP: GET /ubuntu/dists/oneiric-security/universe/i18n/Index HTTP/1.1
+..V.ps.&GET /ubuntu/dists/oneiric-security/universe/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-security/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/i18n/Translation-
+02:54:46.241556 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 1523:1722, ack 2536, win 1383, options [nop,nop,TS val 14374622 ecr 326745605], length 199: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.bz2 HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en.bz2 HTTP/1.1
+02:54:46.265204 IP 192.168.0.200.49821 > 91.189.92.190.80: Flags [P.], seq 4300:4830, ack 4436, win 2107, options [nop,nop,TS val 14374628 ecr 1886596656], length 530: HTTP: GET /ubuntu/dists/oneiric-security/restricted/i18n/Translation-en.bz2 HTTP/1.1
+..V.ps.0GET /ubuntu/dists/oneiric-security/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/universe/i18n/Translation-en.bz2 HTTP/1.1
+02:54:46.273872 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 1722:1923, ack 3081, win 1452, options [nop,nop,TS val 14374630 ecr 326745608], length 201: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.xz HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.xz HTTP/1.1
+02:54:46.301378 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 1923:2121, ack 3628, win 1520, options [nop,nop,TS val 14374637 ecr 326745611], length 198: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.xz HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en.xz HTTP/1.1
+02:54:46.311794 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [P.], seq 1051:1529, ack 2208, win 1264, options [nop,nop,TS val 14374639 ecr 3838325657], length 478: HTTP: GET /ubuntu/dists/oneiric-backports/Release.gpg HTTP/1.1
+..V...3.GET /ubuntu/dists/oneiric-backports/Release.gpg HTTP/1.1
+GET /ubuntu/dists/oneiric/Release HTTP/1.1
+02:54:46.329564 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 2121:2324, ack 4172, win 1589, options [nop,nop,TS val 14374644 ecr 326745613], length 203: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.lzma HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.lzma HTTP/1.1
+02:54:46.361462 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 2324:2524, ack 4721, win 1658, options [nop,nop,TS val 14374652 ecr 326745617], length 200: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.lzma HTTP/1.1
+..V..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en.lzma HTTP/1.1
+02:54:46.393264 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 2524:2725, ack 5267, win 1726, options [nop,nop,TS val 14374660 ecr 326745620], length 201: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.gz HTTP/1.1
+..W..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.gz HTTP/1.1
+02:54:46.412166 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [P.], seq 1529:2011, ack 2736, win 1405, options [nop,nop,TS val 14374664 ecr 3838325682], length 482: HTTP: GET /ubuntu/dists/oneiric-updates/Release HTTP/1.1
+..W...3.GET /ubuntu/dists/oneiric-updates/Release HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/Release HTTP/1.1
+02:54:46.425136 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 2725:2923, ack 5814, win 1795, options [nop,nop,TS val 14374668 ecr 326745623], length 198: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.gz HTTP/1.1
+..W..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en.gz HTTP/1.1
+02:54:46.455147 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 2923:3121, ack 6358, win 1863, options [nop,nop,TS val 14374675 ecr 326745626], length 198: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US HTTP/1.1
+..W..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US HTTP/1.1
+02:54:46.485361 IP 192.168.0.200.59019 > 91.189.88.33.80: Flags [P.], seq 3121:3316, ack 6902, win 1931, options [nop,nop,TS val 14374683 ecr 326745629], length 195: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en HTTP/1.1
+..W..y..GET /ubuntu/dists/oneiric/main/i18n/Translation-en HTTP/1.1
+02:54:46.512734 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [.], seq 2011:3459, ack 3266, win 1546, options [nop,nop,TS val 14374689 ecr 3838325707], length 1448: HTTP: GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+..W!..3.GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/restricted/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/main/i18n/Index HTTP
+GET /ubuntu/dists/oneiric/multiverse/i18n/Index HTTP/1.1
+02:54:46.619069 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [.], seq 4537:5985, ack 5395, win 2110, options [nop,nop,TS val 14374716 ecr 3838325733], length 1448: HTTP: GET /ubuntu/dists/oneiric/restricted/i18n/Index HTTP/1.1
+..W<..3.GET /ubuntu/dists/oneiric/restricted/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/binary-i386/Packages.bz2 HTTP/1.1
+02:54:46.739714 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [.], seq 6597:8045, ack 6911, win 2604, options [nop,nop,TS val 14374746 ecr 3838325763], length 1448: HTTP: GET /ubuntu/dists/oneiric-updates/universe/binary-i386/Packages.bz2 HTTP/1.1
+..WZ..4.GET /ubuntu/dists/oneiric-updates/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/universe/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/main/source/Sources.bz2 HTTP/1.1
+02:54:46.848014 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [.], seq 8397:9845, ack 8774, win 2641, options [nop,nop,TS val 14374773 ecr 3838325790], length 1448: HTTP: GET /ubuntu/dists/oneiric-backports/restricted/source/Sources.bz2 HTTP/1.1
+..Wu..4.GET /ubuntu/dists/oneiric-backports/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/main/i18n/Index HTTP/1.1
+02:54:46.949092 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [.], seq 10509:11957, ack 10532, win 2641, options [nop,nop,TS val 14374798 ecr 3838325816], length 1448: HTTP: GET /ubuntu/dists/oneiric-backports/multiverse/i18n/Index HTTP/1.1
+..W...48GET /ubuntu/dists/oneiric-backports/multiverse/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/multiverse/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/i18n/Translation-en.bz2 HTTP/1.1
+02:54:47.049476 IP 192.168.0.200.47110 > 91.189.91.15.80: Flags [.], seq 12303:13751, ack 12139, win 2641, options [nop,nop,TS val 14374823 ecr 3838325841], length 1448: HTTP: GET /ubuntu/dists/oneiric-updates/main/i18n/Translation-en.bz2 HTTP/1.1
+..W...4QGET /ubuntu/dists/oneiric-updates/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/universe/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/i18n/Translation-en.bz2 HTTP/1.1
+05:36:10.191159 IP 192.168.0.200.49291 > 46.51.197.89.80: Flags [P.], seq 1:352, ack 1, win 913, options [nop,nop,TS val 16795609 ecr 143637062], length 351: HTTP: GET /favicon.ico HTTP/1.1
+..G....FGET /favicon.ico HTTP/1.1
+05:36:10.559804 IP 192.168.0.200.42497 > 91.189.90.40.80: Flags [P.], seq 1:413, ack 1, win 913, options [nop,nop,TS val 16795701 ecr 377062461], length 412: HTTP: GET /11.10/Google/?sourceid=hp HTTP/1.1
+..H5.y.=GET /11.10/Google/?sourceid=hp HTTP/1.1
+05:36:15.266947 IP 192.168.0.200.42990 > 62.252.170.91.80: Flags [P.], seq 1:331, ack 1, win 913, options [nop,nop,TS val 16796878 ecr 1995851178], length 330: HTTP: GET /news/2009/090527/images/459492a-i1.0.jpg HTTP/1.1
+..L.v.E.GET /news/2009/090527/images/459492a-i1.0.jpg HTTP/1.1
+05:44:43.557881 IP 192.168.0.200.52724 > 91.189.89.88.80: Flags [P.], seq 1:413, ack 1, win 913, options [nop,nop,TS val 16923951 ecr 2594764615], length 412: HTTP: GET /11.10/Google/?sourceid=hp HTTP/1.1
+..=/...GGET /11.10/Google/?sourceid=hp HTTP/1.1
+05:44:46.286274 IP 192.168.0.200.43029 > 216.137.63.137.80: Flags [P.], seq 1:318, ack 1, win 913, options [nop,nop,TS val 16924633 ecr 3132441636], length 317: HTTP: GET /images/I/41oZ1XsiOAL HTTP/1.1
+..?...D$GET /images/I/41oZ1XsiOAL HTTP/1.1
+05:44:46.446757 IP 192.168.0.200.43029 > 216.137.63.137.80: Flags [P.], seq 318:596, ack 419, win 980, options [nop,nop,TS val 16924672 ecr 3132441740], length 278: HTTP: GET /favicon.ico HTTP/1.1
+..@...D.GET /favicon.ico HTTP/1.1
+05:45:22.469955 IP 192.168.0.200.42503 > 91.189.90.40.80: Flags [P.], seq 1:318, ack 1, win 913, options [nop,nop,TS val 16933679 ecr 377117677], length 317: HTTP: GET /11.10/Google/?sourceid=hp HTTP/1.1
+..c/.z[.GET /11.10/Google/?sourceid=hp HTTP/1.1
+05:45:26.008031 IP 192.168.0.200.58724 > 159.148.96.184.80: Flags [P.], seq 1:309, ack 1, win 913, options [nop,nop,TS val 16934563 ecr 1016306191], length 308: HTTP: GET /DSC442566.gif HTTP/1.1
+..f.<...GET /DSC442566.gif HTTP/1.1
+05:45:26.248386 IP 192.168.0.200.58724 > 159.148.96.184.80: Flags [P.], seq 309:585, ack 487, win 980, options [nop,nop,TS val 16934623 ecr 1016306220], length 276: HTTP: GET /favicon.ico HTTP/1.1
+..f.<..,GET /favicon.ico HTTP/1.1
+05:45:26.345418 IP 192.168.0.200.58724 > 159.148.96.184.80: Flags [P.], seq 585:891, ack 971, win 1047, options [nop,nop,TS val 16934648 ecr 1016306280], length 306: HTTP: GET /favicon.ico HTTP/1.1
+..f.<..hGET /favicon.ico HTTP/1.1
+05:45:50.155155 IP 192.168.0.200.58460 > 91.189.90.41.80: Flags [P.], seq 1:368, ack 1, win 913, options [nop,nop,TS val 16940598 ecr 376975763], length 367: HTTP: GET /11.10/Google/?sourceid=hp HTTP/1.1
+..~6.x1.GET /11.10/Google/?sourceid=hp HTTP/1.1
+02:52:52.081372 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 1:181, ack 1, win 913, options [nop,nop,TS val 35946082 ecr 335379404], length 180: HTTP: GET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+.$~b..{.GET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+02:52:52.114281 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 1:192, ack 1, win 913, options [nop,nop,TS val 35946090 ecr 1908181164], length 191: HTTP: GET /ubuntu/dists/oneiric-security/InRelease HTTP/1.1
+.$~jq...GET /ubuntu/dists/oneiric-security/InRelease HTTP/1.1
+02:52:52.119556 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 181:413, ack 528, win 980, options [nop,nop,TS val 35946091 ecr 335379408], length 232: HTTP: GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+.$~k..{.GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+02:52:52.145686 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 192:435, ack 563, win 983, options [nop,nop,TS val 35946098 ecr 1908181171], length 243: HTTP: GET /ubuntu/dists/oneiric-security/Release.gpg HTTP/1.1
+.$~rq...GET /ubuntu/dists/oneiric-security/Release.gpg HTTP/1.1
+02:52:52.149573 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 413:641, ack 890, win 1047, options [nop,nop,TS val 35946099 ecr 335379411], length 228: HTTP: GET /ubuntu/dists/oneiric/Release HTTP/1.1
+.$~s..{.GET /ubuntu/dists/oneiric/Release HTTP/1.1
+02:52:52.174435 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 435:674, ack 1121, win 1053, options [nop,nop,TS val 35946105 ecr 1908181179], length 239: HTTP: GET /ubuntu/dists/oneiric-security/Release HTTP/1.1
+.$~yq...GET /ubuntu/dists/oneiric-security/Release HTTP/1.1
+02:52:52.194232 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 1:571, ack 1, win 913, options [nop,nop,TS val 35946110 ecr 3768920645], length 570: HTTP: GET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+.$~~..*EGET /ubuntu/dists/oneiric/InRelease HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/InRelease HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/InRelease HTTP/1.1
+02:52:52.233034 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 641:885, ack 1078, win 1114, options [nop,nop,TS val 35946120 ecr 335379414], length 244: HTTP: GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+02:52:52.267644 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 885:1321, ack 1266, win 1181, options [nop,nop,TS val 35946128 ecr 335379422], length 436: HTTP: GET /ubuntu/dists/oneiric/main/binary-i386/Packages.bz2 HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/main/i18n/Index HTTP/1.1
+02:52:52.273227 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 674:929, ack 42278, win 2641, options [nop,nop,TS val 35946130 ecr 1908181201], length 255: HTTP: GET /ubuntu/dists/oneiric-security/main/source/Sources.bz2 HTTP/1.1
+.$~.q...GET /ubuntu/dists/oneiric-security/main/source/Sources.bz2 HTTP/1.1
+02:52:52.297942 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 1321:1523, ack 1987, win 1315, options [nop,nop,TS val 35946136 ecr 335379426], length 202: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.bz2 HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.bz2 HTTP/1.1
+02:52:52.306347 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 571:1051, ack 1682, win 1123, options [nop,nop,TS val 35946138 ecr 3768920672], length 480: HTTP: GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+.$~...*`GET /ubuntu/dists/oneiric/Release.gpg HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/Release.gpg HTTP/1.1
+02:52:52.337264 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 1523:1722, ack 2535, win 1383, options [nop,nop,TS val 35946146 ecr 335379430], length 199: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.bz2 HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en.bz2 HTTP/1.1
+02:52:52.374989 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 1722:1923, ack 3080, win 1452, options [nop,nop,TS val 35946155 ecr 335379433], length 201: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.xz HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.xz HTTP/1.1
+02:52:52.392300 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [.], seq 929:2377, ack 107094, win 3258, options [nop,nop,TS val 35946159 ecr 1908181228], length 1448: HTTP: GET /ubuntu/dists/oneiric-security/restricted/source/Sources.bz2 HTTP/1.1
+.$~.q...GET /ubuntu/dists/oneiric-security/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/restricted/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/main/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-security/restricted/i18n/Index HTTP/1.1
+02:52:52.403938 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 1923:2121, ack 3627, win 1520, options [nop,nop,TS val 35946162 ecr 335379436], length 198: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.xz HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en.xz HTTP/1.1
+02:52:52.416806 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 1051:1297, ack 1945, win 1194, options [nop,nop,TS val 35946166 ecr 3768920701], length 246: HTTP: GET /ubuntu/dists/oneiric-backports/Release.gpg HTTP/1.1
+.$~...*}GET /ubuntu/dists/oneiric-backports/Release.gpg HTTP/1.1
+02:52:52.431794 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 2121:2324, ack 4171, win 1589, options [nop,nop,TS val 35946169 ecr 335379439], length 203: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.lzma HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.lzma HTTP/1.1
+02:52:52.444629 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 3523:3774, ack 142407, win 4844, options [nop,nop,TS val 35946173 ecr 1908181240], length 251: HTTP: GET /ubuntu/dists/oneiric-security/universe/i18n/Index HTTP/1.1
+.$~.q...GET /ubuntu/dists/oneiric-security/universe/i18n/Index HTTP/1.1
+02:52:52.459934 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 2324:2524, ack 4720, win 1658, options [nop,nop,TS val 35946176 ecr 335379442], length 200: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.lzma HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en.lzma HTTP/1.1
+02:52:52.497420 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 2524:2725, ack 5266, win 1726, options [nop,nop,TS val 35946186 ecr 335379445], length 201: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.gz HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US.gz HTTP/1.1
+02:52:52.527154 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 1297:1529, ack 2750, win 1335, options [nop,nop,TS val 35946193 ecr 3768920728], length 232: HTTP: GET /ubuntu/dists/oneiric/Release HTTP/1.1
+.$~...*.GET /ubuntu/dists/oneiric/Release HTTP/1.1
+02:52:52.528532 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 2725:2923, ack 5813, win 1795, options [nop,nop,TS val 35946194 ecr 335379449], length 198: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en.gz HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en.gz HTTP/1.1
+02:52:52.562789 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 2923:3121, ack 6357, win 1863, options [nop,nop,TS val 35946202 ecr 335379452], length 198: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en_US HTTP/1.1
+02:52:52.596265 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 3774:4097, ack 445455, win 11765, options [nop,nop,TS val 35946211 ecr 1908181280], length 323: HTTP: GET /ubuntu/dists/oneiric-security/main/i18n/Translation-en.bz2 HTTP/1.1
+.$~.q.. GET /ubuntu/dists/oneiric-security/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-security/multiverse/i18n/Translation-
+02:52:52.596648 IP 192.168.0.200.59034 > 91.189.88.33.80: Flags [P.], seq 3121:3316, ack 6901, win 1931, options [nop,nop,TS val 35946211 ecr 335379455], length 195: HTTP: GET /ubuntu/dists/oneiric/main/i18n/Translation-en HTTP/1.1
+.$~...{.GET /ubuntu/dists/oneiric/main/i18n/Translation-en HTTP/1.1
+GET /ubuntu/dists/oneiric-security/restricted/i18n/Translation-en.bz2 HTTP/1.1
+02:52:52.631843 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 1529:1769, ack 3015, win 1405, options [nop,nop,TS val 35946219 ecr 3768920755], length 240: HTTP: GET /ubuntu/dists/oneiric-updates/Release HTTP/1.1
+.$~...*.GET /ubuntu/dists/oneiric-updates/Release HTTP/1.1
+02:52:52.645051 IP 192.168.0.200.49836 > 91.189.92.190.80: Flags [P.], seq 4566:4830, ack 445817, win 11765, options [nop,nop,TS val 35946223 ecr 1908181297], length 264: HTTP: GET /ubuntu/dists/oneiric-security/universe/i18n/Translation-en.bz2 HTTP/1.1
+.$~.q..1GET /ubuntu/dists/oneiric-security/universe/i18n/Translation-en.bz2 HTTP/1.1
+02:52:52.738992 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 1769:2011, ack 4463, win 1586, options [nop,nop,TS val 35946246 ecr 3768920781], length 242: HTTP: GET /ubuntu/dists/oneiric-backports/Release HTTP/1.1
+.$....*.GET /ubuntu/dists/oneiric-backports/Release HTTP/1.1
+02:52:53.044882 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [.], seq 2011:3459, ack 44419, win 2715, options [nop,nop,TS val 35946322 ecr 3768920856], length 1448: HTTP: GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+.$.R..+.GET /ubuntu/dists/oneiric/main/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/restricted/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/main/i18n/Index HTTP
+GET /ubuntu/dists/oneiric/multiverse/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric/restricted/i18n/Index HTTP/1.1
+02:52:53.206107 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [.], seq 4783:6231, ack 46548, win 2715, options [nop,nop,TS val 35946363 ecr 3768920885], length 1448: HTTP: GET /ubuntu/dists/oneiric/universe/i18n/Index HTTP/1.1
+.$.{..+5GET /ubuntu/dists/oneiric/universe/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/binary-i386/Packages.bz2 HTTP/1.1
+02:52:53.421887 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 6597:7633, ack 64644, win 2715, options [nop,nop,TS val 35946417 ecr 3768920952], length 1036: HTTP: GET /ubuntu/dists/oneiric-updates/universe/binary-i386/Packages.bz2 HTTP/1.1
+.$....+xGET /ubuntu/dists/oneiric-updates/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/i18n/Index HTTP/1.1
+02:52:53.882844 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 7633:7887, ack 215236, win 5611, options [nop,nop,TS val 35946532 ecr 3768921066], length 254: HTTP: GET /ubuntu/dists/oneiric-updates/restricted/i18n/Index HTTP/1.1
+.$.$..+.GET /ubuntu/dists/oneiric-updates/restricted/i18n/Index HTTP/1.1
+02:52:54.025756 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 7887:8139, ack 280396, win 6697, options [nop,nop,TS val 35946568 ecr 3768921104], length 252: HTTP: GET /ubuntu/dists/oneiric-updates/universe/i18n/Index HTTP/1.1
+.$.H..,.GET /ubuntu/dists/oneiric-updates/universe/i18n/Index HTTP/1.1
+02:52:54.133711 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 8139:8661, ack 368724, win 8145, options [nop,nop,TS val 35946595 ecr 3768921130], length 522: HTTP: GET /ubuntu/dists/oneiric-backports/main/source/Sources.bz2 HTTP/1.1
+.$.c..,*GET /ubuntu/dists/oneiric-backports/main/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/source/Sources.bz2 HTTP/1.1
+02:52:54.464350 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 8661:9187, ack 746652, win 17738, options [nop,nop,TS val 35946677 ecr 3768921208], length 526: HTTP: GET /ubuntu/dists/oneiric-backports/universe/source/Sources.bz2 HTTP/1.1
+.$....,xGET /ubuntu/dists/oneiric-backports/universe/source/Sources.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/source/Sources.bz2 HTTP/1.1
+02:52:54.706714 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [.], seq 9187:10635, ack 874041, win 21177, options [nop,nop,TS val 35946738 ecr 3768921240], length 1448: HTTP: GET /ubuntu/dists/oneiric-backports/main/binary-i386/Packages.bz2 HTTP/1.1
+.$....,.GET /ubuntu/dists/oneiric-backports/main/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/binary-i386/Packages.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/main/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/i18n/Index HTTP/1.1
+GET /ubuntu/dists/oneiric/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/multiverse/i18n/Translation-en.bz2 HTTP/1.1
+02:52:54.951569 IP 192.168.0.200.54634 > 91.189.91.14.80: Flags [P.], seq 11787:12289, ack 874567, win 21177, options [nop,nop,TS val 35946799 ecr 3768921334], length 502: HTTP: GET /ubuntu/dists/oneiric/restricted/i18n/Translation-en.bz2 HTTP/1.1
+.$./..,.GET /ubuntu/dists/oneiric/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric/universe/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/multiverse/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-updates/universe/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/main/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/multiverse/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/restricted/i18n/Translation-en.bz2 HTTP/1.1
+GET /ubuntu/dists/oneiric-backports/universe/i18n/Translation-en.bz2 HTTP/1.1
+12:47:49.310903 IP 1.234.31.20.38720 > 192.168.0.200.80: Flags [P.], seq 1:184, ack 1, win 115, options [nop,nop,TS val 2333473261 ecr 44870302], length 183: HTTP: GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1
+........GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1
+12:47:54.817639 IP 1.234.31.20.42230 > 192.168.0.200.80: Flags [P.], seq 1:171, ack 1, win 115, options [nop,nop,TS val 2333478771 ecr 44871679], length 170: HTTP: GET /phpMyAdmin/scripts/setup.php HTTP/1.1
+...s....GET /phpMyAdmin/scripts/setup.php HTTP/1.1
+12:48:00.827917 IP 1.234.31.20.45552 > 192.168.0.200.80: Flags [P.], seq 1:171, ack 1, win 115, options [nop,nop,TS val 2333484782 ecr 44873180], length 170: HTTP: GET /phpmyadmin/scripts/setup.php HTTP/1.1
+..&.....GET /phpmyadmin/scripts/setup.php HTTP/1.1
+12:48:06.817903 IP 1.234.31.20.48734 > 192.168.0.200.80: Flags [P.], seq 1:164, ack 1, win 115, options [nop,nop,TS val 2333490772 ecr 44874679], length 163: HTTP: GET /pma/scripts/setup.php HTTP/1.1
+..>T....GET /pma/scripts/setup.php HTTP/1.1
+12:48:12.822560 IP 1.234.31.20.52079 > 192.168.0.200.80: Flags [P.], seq 1:168, ack 1, win 115, options [nop,nop,TS val 2333496777 ecr 44876180], length 167: HTTP: GET /myadmin/scripts/setup.php HTTP/1.1
+..U.....GET /myadmin/scripts/setup.php HTTP/1.1
+12:48:18.817364 IP 1.234.31.20.55672 > 192.168.0.200.80: Flags [P.], seq 1:168, ack 1, win 115, options [nop,nop,TS val 2333502770 ecr 44877679], length 167: HTTP: GET /MyAdmin/scripts/setup.php HTTP/1.1
+..m2...oGET /MyAdmin/scripts/setup.php HTTP/1.1

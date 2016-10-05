@@ -1,0 +1,31 @@
+00:01:22 [DEBUG:server.c:116] Pbproxy server started...
+00:01:22 [DEBUG:server.c:142] accepted...
+00:01:22 [DEBUG:server.c:168] connected...
+00:01:22 [DEBUG:server.c:178] key is 48656C6C6F20576F726C6421
+, length 256
+00:01:22 [DEBUG:server.c:187] Received IV 80
+00:01:22 [DEBUG:server.c:187] Received IV 78
+00:01:22 [DEBUG:server.c:187] Received IV 98
+00:01:22 [DEBUG:server.c:187] Received IV 8a
+00:01:22 [DEBUG:server.c:187] Received IV 74
+00:01:22 [DEBUG:server.c:187] Received IV 77
+00:01:22 [DEBUG:server.c:187] Received IV 72
+00:01:22 [DEBUG:server.c:187] Received IV 36
+00:01:22 [DEBUG:server.c:38] Start handling c2s..
+00:01:22 [DEBUG:server.c:83] Start handling s2c..
+00:01:22 [DEBUG:server.c:46] c2s receive buffer q
+00:01:22 [DEBUG:server.c:52] Decryption from [q] to [48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+]
+
+00:01:22 [DEBUG:server.c:55] c2s: The buffer is q before decryption
+00:01:22 [DEBUG:server.c:91] s2c receive buffer 48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+
+00:01:22 [DEBUG:server.c:97] Encryption from [48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+] to [q]
+
+00:01:22 [DEBUG:server.c:100] s2c: the buffer is 48 65 6C 6C 6F 20 57 6F 72 6C 64 21
+ before encryption
+00:01:22 [DEBUG:server.c:42] Errors occurred, read failed m
+00:01:22 [DEBUG:server.c:87] Errors occurred, read failed m
+00:01:22 [DEBUG:server.c:62] exit  c2s ......
+00:01:22 [DEBUG:server.c:107] exit  s2c ......

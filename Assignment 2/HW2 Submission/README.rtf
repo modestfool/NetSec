@@ -1,0 +1,121 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww12960\viewh10620\viewkind1
+\deftab1059
+\pard\pardeftab1059\partightenfactor0
+
+\f0\fs22 \cf0 CSE508: Network Security, Spring 2016\
+\
+Homework 2: Programming with Libpcap\
+Basava R Kanaparthi (110479710)\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+README \
+\
+Source files included: \
+	mydump.c 	  - main source file. \
+\
+	headers.h	  - contains constants and various protocol 				header struct definitions.\
+	\
+	mydump 		  - executable generated.\
+\
+	Makefile	  - makefile to generate the executable.\
+\
+\pard\pardeftab1059\pardirnatural\partightenfactor0
+\cf0 	hw1.pcap_log.txt - output from the program, using hw1.pcap 				file from HW1.\
+\pard\pardeftab1059\partightenfactor0
+\cf0 	\
+Instructions: \
+As described in the assignment instructions, the program 	conforms to the following behaviour:\
+\pard\pardeftab1059\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab1059\partightenfactor0
+\cf0 Usage: mydump [-i interface] [-r file] [-s string] expression\
+\pard\pardeftab1059\pardirnatural\partightenfactor0
+\cf0 \
+Options:\
+	-i  Listen on network device <interface> (e.g., eth0).\
+		If not specified, default interface is chosen to 		listen on.\
+ \
+	-r  Read packets from <file> (tcpdump format).\
+\
+	-s  Keep only packets that contain <string> in their 		payload.\
+\
+	<expression> is a BPF filter that specifies which packets 	will be dumped. If no filter is given, all packets seen on 	the interface (or contained in the trace) will be dumped. 	Otherwise, only packets matching <expression> will be 	dumped.\
+\
+Details:\
+1. Using \'91getopt\'92 method, the command line arguments are parsed and appropriate constants are setup (for e.g., filename to read in offline mode, etc.)\
+2. Then using pcap library routines, like pcap_lookupdev(), are called to set up the environment for packet sniffing. Using pcap_open_live(), the dev is listened on in promiscuous mode.\
+3. Using pcap_loop and the callback function, defined the program indefinitely runs, until the end signal (Ctrl+c) is received. As soon as a packet is sniffed, the callback function (got_packet) is called and passed the appropriate arguments. \
+4. In the got_packet function, every packet is assumed to have ethernet header of 14 bytes. And depending upon the type of network layer (IP or ARP), it is handled by appropriate methods.\
+5. And if the packet is of IP type, then depending upon the transport layer protocol (TCP, UDP, ICMP, OTHER), the payload data is printed out.\
+6. To print out the binary in Hex, a helper function print_hex_ascii_line is used.\
+\
+Example outputs:\
+(Besides the attached log file - hw1.pcap_log.txt)\
+	\
+1. TCP packets\
+sh-3.2# ./mydump -i en0 -r ../Assignment\\ 1/hw1.pcap tcp | head\
+2013-01-12 14:35:49.329823 c4:3d:c7:17:6f:9b  -> 0:c:29:e9:94:8e    type 0x0800 length: 74 122.154.101.54:39437 -> 192.168.0.200:443 TCP payload_len: 0\
+2013-01-12 14:35:49.350673 0:c:29:e9:94:8e    -> c4:3d:c7:17:6f:9b  type 0x0800 length: 74 192.168.0.200:443 -> 122.154.101.54:39437 TCP payload_len: 0\
+2013-01-12 14:35:49.679245 c4:3d:c7:17:6f:9b  -> 0:c:29:e9:94:8e    type 0x0800 length: 66 122.154.101.54:39437 -> 192.168.0.200:443 TCP payload_len: 0\
+2013-01-12 14:35:49.724737 c4:3d:c7:17:6f:9b  -> 0:c:29:e9:94:8e    type 0x0800 length: 171 122.154.101.54:39437 -> 192.168.0.200:443 TCP payload_len: 105\
+00000   80 67 01 03 01 00 4e 00  00 00 10 00 00 39 00 00    .g....N......9..\
+00016   38 00 00 35 00 00 16 00  00 13 00 00 0a 07 00 c0    8..5............\
+00032   00 00 33 00 00 32 00 00  2f 03 00 80 00 00 05 00    ..3..2../.......\
+00048   00 04 01 00 80 00 00 15  00 00 12 00 00 09 06 00    ................\
+00064   40 00 00 14 00 00 11 00  00 08 00 00 06 04 00 80    @...............\
+00080   00 00 03 02 00 80 00 00  ff 0d 21 3b d5 b5 7b 08    ..........!;..\{.\
+	\
+2. UDP packets\
+\
+sh-3.2# ./mydump -i en0 -r ../Assignment\\ 1/hw1.pcap udp | head\
+2013-01-12 11:38:02.227995 c4:3d:c7:17:6f:9b  -> 1:0:5e:7f:ff:fa    type 0x0800 length: 342 192.168.0.1:1041 -> 239.255.255.250:9812 UDP payload_len: 300\
+00000   4e 4f 54 49 46 59 20 2a  20 48 54 54 50 2f 31 2e    NOTIFY * HTTP/1.\
+00016   31 0d 0a 48 4f 53 54 3a  20 32 33 39 2e 32 35 35    1..HOST: 239.255\
+00032   2e 32 35 35 2e 32 35 30  3a 31 39 30 30 0d 0a 43    .255.250:1900..C\
+00048   61 63 68 65 2d 43 6f 6e  74 72 6f 6c 3a 20 6d 61    ache-Control: ma\
+00064   78 2d 61 67 65 3d 33 36  30 30 0d 0a 4c 6f 63 61    x-age=3600..Loca\
+00080   74 69 6f 6e 3a 20 68 74  74 70 3a 2f 2f 31 39 32    tion: http://192\
+00096   2e 31 36 38 2e 30 2e 31  3a 38 30 2f 52 6f 6f 74    .168.0.1:80/Root\
+00112   44 65 76 69 63 65 2e 78  6d 6c 0d 0a 4e 54 3a 20    Device.xml..NT: \
+00128   75 75 69 64 3a 75 70 6e  70 2d 49 6e 74 65 72 6e    uuid:upnp-Intern\
+\
+3. ARP packets\
+\
+sh-3.2# ./mydump -i en0 -r ../Assignment\\ 1/hw1.pcap arp | head\
+2013-01-12 11:37:42.871346 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.12 tell 192.168.0.1, length: 46\
+2013-01-12 11:38:13.796474 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.12 tell 192.168.0.1, length: 46\
+2013-01-12 11:38:44.821049 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.12 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:15.847663 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.12 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:16.974524 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.2 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:17.076664 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.6 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:17.107161 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.10 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:19.124892 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.11 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:19.227215 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.12 tell 192.168.0.1, length: 46\
+2013-01-12 11:39:25.166333 c4:3d:c7:17:6f:9b  -> ff:ff:ff:ff:ff:ff , ethertype ARP (0x0806), length: 60 Request who-has  192.168.0.11 tell 192.168.0.1, length: 46\
+\
+\
+4. ICMP packets\
+\
+sh-3.2# ./mydump -i en0 -r ../Assignment\\ 1/hw1.pcap icmp | head\
+2013-01-14 12:42:31.752299 c4:3d:c7:17:6f:9b  -> 0:c:29:e9:94:8e    type 0x0800 length: 90 1.234.31.20 -> 192.168.0.200 ICMP dest unreachable: host prohibited payload_len: 56\
+00000   45 00 00 30 00 00 40 00  2e 06 6a 5a c0 a8 00 c8    E..0..@...jZ....\
+00016   01 ea 1f 14 00 50 7b 81  bd cd 09 c6 3a 35 22 b0    .....P\{.....:5".\
+00032   70 12 39 08 11 ab 00 00  02 04 05 b4 01 01 04 02    p.9.............\
+00048   61 63 68 65 2d 43 6f 6e                             ache-Con\
+\
+5. IGMP (Other) packets\
+\
+sh-3.2# ./mydump -i en0 -r ../Assignment\\ 1/hw1.pcap igmp | head\
+2013-01-12 11:39:26.113670 44:6d:57:f6:7e:0   -> 1:0:5e:0:0:16      type 0x0800 length: 60 192.168.0.11 ->   224.0.0.22 OTHER \
+2013-01-12 11:39:26.127793 44:6d:57:f6:7e:0   -> 1:0:5e:0:0:16      type 0x0800 length: 60 192.168.0.11 ->   224.0.0.22 OTHER \
+2013-01-12 11:39:26.130006 44:6d:57:f6:7e:0   -> 1:0:5e:0:0:16      type 0x0800 length: 60 192.168.0.11 ->   224.0.0.22 OTHER \
+2013-01-12 11:39:26.139982 44:6d:57:f6:7e:0   -> 1:0:5e:0:0:16      type 0x0800 length: 60 192.168.0.11 ->   224.0.0.22 OTHER \
+2013-01-12 11:39:26.481238 44:6d:57:f6:7e:0   -> 1:0:5e:0:0:16      type 0x0800 length: 60 192.168.0.11 ->   224.0.0.22 OTHER \
+2013-01-12 11:46:24.180215 3c:d0:f8:4e:4b:a1  -> 1:0:5e:0:0:16      type 0x0800 length: 60 192.168.0.10 ->   224.0.0.22 OTHER \
+2013-01-12 11:56:46.557317 34:c0:59:9d:1c:79  -> 1:0:5e:0:0:16      type 0x0800 length: 60  192.168.0.7 ->   224.0.0.22 OTHER \
+2013-01-12 11:57:26.288664 fc:25:3f:8e:4c:9a  -> 1:0:5e:0:0:16      type 0x0800 length: 60  192.168.0.5 ->   224.0.0.22 OTHER \
+2013-01-12 11:57:28.335790 fc:25:3f:8e:4c:9a  -> 1:0:5e:0:0:16      type 0x0800 length: 60  192.168.0.5 ->   224.0.0.22 OTHER \
+2013-01-12 12:06:45.383826 0:16:44:b5:86:2e   -> 1:0:5e:0:0:16      type 0x0800 length: 60  192.168.0.3 ->   224.0.0.22 OTHER \
+}
